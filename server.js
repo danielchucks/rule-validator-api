@@ -7,6 +7,7 @@ app.use(express.json({ extended: false }));
 
 // Defining Routes
 app.use("/api/", require("./route"));
+app.use("/api/validate-rule", require("./route"));
 
 // app.get("/", (req, res) => {
 //   res.json({ msg: "Hello to my very first API" });

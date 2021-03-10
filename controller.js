@@ -49,7 +49,7 @@ const handlerRuleValidation = (req, res) => {
 		rule.field.match(/\./g) !== null ? rule.field.match(/\./g).length : 0;
 
 	if (testValue > 2) {
-		return errorResponse(res, "Unsupported datatypeDDDDDDDDDD", null);
+		return errorResponse(res, "Unsupported nested level", null);
 	}
 	return errorResponse(res, testValue, null);
 };
